@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "333666011417",
-    "firebase_url": "https://shaqsoundboard.firebaseio.com",
-    "project_id": "shaqsoundboard",
-    "storage_bucket": "shaqsoundboard.appspot.com"
+    "project_number": "585633529154",
+    "firebase_url": "https://pewdiepie-soundboard.firebaseio.com",
+    "project_id": "pewdiepie-soundboard",
+    "storage_bucket": "pewdiepie-soundboard.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:333666011417:android:5e8b0a13054a315b",
+        "mobilesdk_app_id": "1:585633529154:android:9d87da7a4f230785",
         "android_client_info": {
-          "package_name": "nz.isaacmercer.bigshaq"
+          "package_name": "nz.isaacmercer.pewdiepie"
         }
       },
       "oauth_client": [
         {
-          "client_id": "333666011417-dkk73tb3c7lagrnt099fhd12qim24oc4.apps.googleusercontent.com",
+          "client_id": "585633529154-lps7oegfhjc9b4nifckh906dgnc6g7uj.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA4FtbKbQqACDfIy_rOVkv1bVn3Iav22Wg"
+          "current_key": "AIzaSyCP44aRDbh91p5I4w3U5RI14J4iNE1ePLU"
         }
       ],
       "services": {

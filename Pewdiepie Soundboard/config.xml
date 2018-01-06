@@ -6,11 +6,11 @@
 		* ENSURE CHANGES ARE REPLICATED IN MANIFESTS
 		* ICONS ARE FOUND (AND I BELIEVED CHANEGD) in the res/icon folder
 		* SPLASH SCREENS ARE LOCATED (AND I BELEIVED CHANGED) in the res/screen -->
-<widget android-versionCode="100" id="nz.isaacmercer.soundboard" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0"> <!--TODO: CHANGE THE PACKAGE ID (NEED TO CHANGE IN OTHER FILES TOO SEE readme-->
+<widget android-versionCode="100" id="nz.isaacmercer.pewdiepie" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0"> <!--TODO: CHANGE THE PACKAGE ID (NEED TO CHANGE IN OTHER FILES TOO SEE readme-->
     <hook src="hooks/gradle-fix.js" type="before_prepare" />
-    <name>Soundboard</name> <!-- TODO: CHANGE TO DISPLAY NAME ON DEVICE -->
+    <name>PewDiePie</name> <!-- TODO: CHANGE TO DISPLAY NAME ON DEVICE -->
     <description>
-        Mans not hot <!-- TODO: change description, I dont beleive it does much though -->
+         <!-- TODO: change description, I dont beleive it does much though -->
     </description>
     <author email="isaac@isaacmercer.nz" href="http://isaacmercer.nz">
         Isaac Mercer
@@ -58,9 +58,9 @@
     <platform name="android">
         <resource-file src="google-services.json" target="google-services.json" />
     </platform>
-    <platform name="ios">
+    <!--<platform name="ios">
         <resource-file src="GoogleService-Info.plist" />
-    </platform>
+    </platform>-->
     <engine name="browser" spec="~5.0.1" />
     <engine name="android" spec="^6.3.0" />
     <engine name="ios" spec="^4.5.3" />

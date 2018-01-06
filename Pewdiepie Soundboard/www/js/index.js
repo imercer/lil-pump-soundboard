@@ -60,18 +60,18 @@ if (adsIAPpurchased) {
     var admobid = {};
     if( /(android)/i.test(navigator.userAgent) ) { // for android & amazon-fireos
       admobid = {
-        banner: 'ca-app-pub-5354491797983322/5706099041', //TODO: CHANGE THIS TO THE NEW APP's BANNER ID
-        interstitial: 'ca-app-pub-5354491797983322/6572334447' //TODO: CHANGE THIS TO THE NEW APP's INTERSTERTIAL ID
+        banner: 'ca-app-pub-5354491797983322/7043113245', //TODO: CHANGE THIS TO THE NEW APP's BANNER ID
+        interstitial: 'ca-app-pub-5354491797983322/7570970128' //TODO: CHANGE THIS TO THE NEW APP's INTERSTERTIAL ID
       };
     } else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) { // for ios
       admobid = {
-        banner: 'ca-app-pub-5354491797983322/5706099041', //TODO: CHANGE THIS TO THE NEW APP's BANNER ID - iOS
-        interstitial: 'ca-app-pub-5354491797983322/6572334447' //TODO: CHANGE THIS TO THE NEW APP's INTERSTERTIAL ID -iOS
+        banner: '', //TODO: CHANGE THIS TO THE NEW APP's BANNER ID - iOS
+        interstitial: '' //TODO: CHANGE THIS TO THE NEW APP's INTERSTERTIAL ID -iOS
       };
     } else { // for windows phone NOT SUPPORTED
       admobid = {
-        banner: 'ca-app-pub-5354491797983322/5706099041', 
-        interstitial: 'ca-app-pub-5354491797983322/6572334447'
+        banner: '', 
+        interstitial: ''
       };
     }
 
@@ -311,14 +311,14 @@ function displayHideAds() {
 function purchaseHideAds() {
     cordova.plugins.firebase.analytics.logEvent("IAPPurchaseRequested");
     inAppPurchase
-      .buy('nz.isaacmercer.soundboard.noads') //TODO: CHANGE THIS TO THE APP PACKAGE NAME
+      .buy('nz.isaacmercer.pewdiepie.noads') //TODO: CHANGE THIS TO THE APP PACKAGE NAME
       .then(function (data) {
         console.log(data);
            displayAds = "no";
            AdMob.removeBanner();
             cordova.plugins.firebase.analytics.logEvent("IAPPurchaseSuccess");
           localStorage.setItem('hideAdsPurchased', data.transactionId);
-          var IAPsuccessdialogtxt = "<h5>All Done!</h5>You've successfully purchased the Hide Ads add-on for Soundboard. You may need to restart the app for the changes to be made and all the ads to stop displaying. Thank you for your support."; //TODO: CHANGE THIS TO INCLUDE THE SOUNDBOARD NAME
+          var IAPsuccessdialogtxt = "<h5>All Done!</h5>You've successfully purchased the Hide Ads add-on for Pewdiepie Soundboard. You may need to restart the app for the changes to be made and all the ads to stop displaying. Thank you for your support."; //TODO: CHANGE THIS TO INCLUDE THE SOUNDBOARD NAME
           IAPsuccessdialogtxt += "<br><br><br><br<br><button class=\"mdl-button mdl-js-button mdl-button--raised mdl-button--accent\" onclick=\"closeDialog()\">Close</button>";
           document.getElementById('dialog').innerHTML = IAPsuccessdialogtxt;
           cordova.plugins.firebase.analytics.setUserProperty("IAP_TransactionID", data.transactionId);
@@ -398,7 +398,7 @@ function ringtoneSet(sound,setting) {
     } else {
         AdMob.showInterstitial();
         AdMob.prepareInterstitial({
-                adId: 'ca-app-pub-5354491797983322/6572334447', //TODO: SET THIS TO INTERSTERTIAL AD ID
+                adId: 'cca-app-pub-5354491797983322/7570970128', //TODO: SET THIS TO INTERSTERTIAL AD ID
                 autoShow: false
             });
     };
